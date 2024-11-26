@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:monospace;
     color: aqua;
     text-align: center;
 }
@@ -23,15 +23,82 @@ body{
 }
 /*style de l'entete, premiere page du site*/
     /*modification du menu de navigation*/
-nav{
+#menutop{
     margin: 30px;
-
+    position:sticky;
+    top: 20px;
+    
    
 }
-nav  a{
+.hidden{
+    display: none;
+}
+#menutop  a{
     margin: 8px;
    
 }
+
+/* //////////////////////////////////////////// formulaire  */
+#burger {
+    position : fixed;
+    top: 20px;
+    right: 20px;
+    border : 1px solid #aaa;
+    border-radius: 5px;
+}
+/* définition du format du menu. Par défaut le menu est invisible */
+#menu{
+    /*display : none;*/
+    position : fixed;
+    top: 100px;
+    right: 20px;
+    border : 1px solid #00f;
+    background-color: #07235f;
+    color: #fff;
+    transition: transform .25s;
+    transform: translateX(225px);
+    width: 200px;
+    height: 400px;
+    display : flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+    
+}
+
+#menu a {
+   text-decoration: none;
+   
+    font-size: 1rem;
+    border-top: solid 2px #fff;
+    border-bottom:solid 2px #fff ;
+    padding: 10px;
+}
+
+#menu a:hover{
+    background-color: #000e2c;
+}
+
+#chk-burger{
+    display : none;
+    width : 200px;
+    border : 2px solid #f00;
+    padding: 10px;
+}
+
+/* Sélectionne l'élément #burger qui est précédé par la case à côcher (#chk-burger côcher) */
+/* opérateur + un des suivant
+   opérateur ~ le suivant
+*/
+#chk-burger:checked + #menu {
+    /*display:block; /* menu devient visible */
+    transform: translateX(0);
+}
+
+
+
+/* ///////////////////////////////////////// fin formulaire */
+
 a{
     color: aqua;
     text-decoration: none;

@@ -6,28 +6,43 @@
     <title>Labo7</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/javascript/script.js" defer></script>
 </head>
 <body>
     <header id = "entete" class = "entete">
         <div class = "global  hero">
-            <nav>
-                <a href = "#accueil">Accueil</a>
-                <a href="#section-1">section-1</a>
-                <a href="#section-2">section-2</a>
-                <a href="#section-3">section-3</a>
-                <a href="#section-4">section-4</a>
+            <nav id="menutop">
+                <a href = "#entete">Accueil</a>
+                <a href="#section-1">Inscription</a>
+                <a href="#section-2">Tableau</a>
+                <a href="#section-3">Articles</a>
+                <a href="#section-4">Galerie</a>
+                <a href="#section-5">Vidéo</a>
                 <a href="#pied">Info</a>
             </nav>
+            <div class = "hidden" id = "menualt">
+                <label  id="burger" for="chk-burger"><img src="https://s2.svgbox.net/hero-outline.svg?ic=menu-alt-1&color=000" width="64" height="64"></label>   
+                <input type="checkbox" name="chk-burger" id="chk-burger">
+                <nav  id="menu">
+                    <a href = "#entete">Accueil</a>
+                    <a href="#section-1">Inscription</a>
+                    <a href="#section-2">Tableau</a>
+                    <a href="#section-3">Articles</a>
+                    <a href="#section-4">Galerie</a>
+                    <a href="#section-5">Vidéo</a>
+                    <a href="#pied">Info</a>
+                </nav>
+            </div>
             <div class="intro">
                 <div id = "texte">
                     <h1>TP2</h1>
-                    <p id = "para">Ce travail indiviudel consiste à créer un site
+                    <p id = "para">Ce travail individuel consiste à créer un site
                         web monopage composé de plusieurs sections
                         distinctes, chacune occupant une hauteur minimale
                         de 100vh. Chaque section doit être navigable à partir
                         d'un menu fixe toujours visible en haut de la page.
                     </p>
-                    <p id="auteur">Auteur : Jérémie Tremblay</p>
+                    <p id="auteur">Auteur : Jérémie Tremblay582-1W1 - Mise en page Web</p>
                     <p id="datederemise">Date de remise: 12 novembre</p>
                 </div>
                 <div id = "logo">
@@ -42,22 +57,27 @@
     </header>
     <section id = "section-1">
         <div class="global">
-            <h2>section-1</h2>
+            <h2>Inscription</h2>
         </div>
     </section>
     <section id = "section-2">
         <div class="global">
-            <h2>section-2</h2>
+            <h2>Tableau</h2>
         </div>
     </section>
     <section id = "section-3">
         <div class="global">
-            <h2>section-3</h2>
+            <h2>Articles</h2>
         </div>
     </section>
     <section id = "section-4">
         <div class="global">
-            <h2>section-4</h2>
+            <h2>Galerie</h2>
+        </div>
+    </section>
+    <section id = "section-5">
+        <div class="global">
+            <h2>Vidéo</h2>
         </div>
     </section>
 
