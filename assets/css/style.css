@@ -5,13 +5,17 @@
 }
 body{
     font-family:monospace;
-    color: aqua;
+    color: rgb(0, 0, 0);
     text-align: center;
+    background-color: white;
 }
 
 .global{
     min-height: 100vh;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(124, 124, 124, 0.5);
+    border-left: solid black 1px;
+    border-right: solid black 1px;
+    border-bottom: dashed rgb(75, 75, 75) 2px;
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -24,6 +28,9 @@ body{
 /*style de l'entete, premiere page du site*/
     /*modification du menu de navigation*/
 #menutop{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: 30px;
     position:sticky;
     top: 20px;
@@ -34,8 +41,18 @@ body{
     display: none;
 }
 #menutop  a{
-    margin: 8px;
-   
+    margin: 0;
+    outline: solid black 1px;
+    margin-top: 1px;
+    margin-left: 1px;
+    font-size: 1.5rem;
+    padding: 3px;
+    background-color: white;
+}
+#menutop a:hover{
+    background-color: rgba(124, 124, 124, 1);
+    margin-left:5px ;
+    margin-right:5px ;
 }
 
 /* //////////////////////////////////////////// formulaire  */
@@ -100,7 +117,7 @@ body{
 /* ///////////////////////////////////////// fin formulaire */
 
 a{
-    color: aqua;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 /*section qui contient le texte et le logo en row*/
@@ -109,16 +126,31 @@ a{
     text-align: left;
     font-style: italic;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 5px;
 }
 .intro  p{
     line-height: 2;
     text-align: left;
+    outline: solid 1px black;
+    margin-left: 5px;
+    padding: 3px;
 }
 .intro{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    color: white;
+    background-color: rgba(0, 38, 255, 0.897);
 
+}
+.intro, #logo, #texte{
+    box-shadow: 1px 1px 1px black,
+    2px 2px 1px black,
+    3px 3px 1px rgba(0, 38, 255, 0.897),
+    4px 4px 1px rgba(0, 38, 255, 0.897),
+    4px 4px 1px rgba(0, 38, 255, 0.897),
+    
+    6px 6px 1px black;
 }
 /*div du texte*/
 #texte{
@@ -127,16 +159,20 @@ a{
     justify-content: center;
     flex-wrap: wrap;
     flex: 2 1 600px;
-    margin-left: 20px;
+
+    
 }
 #auteur, #datederemise, #para{
     margin: 10px;
+    outline: solid 1px black;
+    
 }
 /*logo*/
 #logo  img{
     max-width: 400px;
     max-height: 400px;
-    flex: 1 2 400px;
+    flex: 2 2 400px;
+
 }
 
 /*bas de l'entete avec les infos du collège*/
@@ -146,7 +182,7 @@ a{
     margin-bottom: 60px;
 }
 /*définir la couleur des pages*/
-.entete,
+/*.entete,
 .pied{
     background-color: rgb(0, 89, 255);
 }
@@ -161,4 +197,5 @@ body  > section:nth-of-type(3) {
 }
 body  > section:nth-of-type(4) {
     background-color: hsl(204, 84%, 82%);
-}
+}*/
+
