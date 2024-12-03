@@ -50,7 +50,7 @@ body{
     background-color: white;
 }
 #menutop a:hover{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(59, 59, 59);
     margin-left:5px ;
     margin-right:5px ;
 }
@@ -140,7 +140,7 @@ a{
     flex-direction: row;
     flex-wrap: wrap;
     color: white;
-    background-color: rgba(0, 38, 255, 0.897);
+    background-color: rgba(182, 180, 180, 0.897);
 
 }
 .intro, #logo, #texte{
@@ -181,6 +181,62 @@ a{
     margin-bottom: 0;
     margin-bottom: 60px;
 }
+/*section article*/
+/*transformation de l'article*/
+.article__figure{
+
+    top: 50%;
+    height: 50%;
+    transform:  scale(.5);
+    transition: transform .25s, opacity .25s;
+  
+    filter: grayscale(1) opacity(.5) blur(10px);
+}
+.article__figure:hover{
+    transform : scale(1);
+    
+    filter: grayscale(0) opacity(1) blur(0px);
+}
+.article:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+/*définir la taille max de l'image des articles*/
+#article1{
+    max-width: 500px;
+    max-height: 400px;
+}
+/*faire en sorte que les images et le texte des articles soient affichés en rangée*/
+.article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*faire en sorte que la figcaption soit sous l'image*/
+.fig{
+    display: flex;
+    flex-direction: column;
+    flex: 1 2 600px;
+    
+}
+figcaption{
+    margin: 20px;
+}
+
+.para__article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   flex: 3 2;
+}
+
+
+
+
+
+
+
+
 /*définir la couleur des pages*/
 /*.entete,
 .pied{
