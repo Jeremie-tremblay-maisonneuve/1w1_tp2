@@ -49,20 +49,128 @@
                     <img src="assets/image/logo.png" alt="logo">
                 </div>
             </div>
-            <div id="piedentete">
+            <div class="piedentete">
                 <h2>Département de techniques d'intégration multimédia - Collège de Maisonneuve - 3800 Sherbrooke Est, Montréal</h2>
 
             </div>
         </div>
     </header>
+    <!--Fin de la section d'accueil-->
     <section id = "section-1">
-        <div class="global">
+        <div class="global  formulaire">
             <h2>Inscription</h2>
+
+
+                <form action="" id="formulaire1" class = "">
+                    <div class = "champs">
+                        
+                        <div class="gauche">
+                            <h2>informations</h2>
+                            <div class = "radio">
+                                <input type="radio" id="radiobutton1" name="Nouveau" value="Nouveau">
+                                <label for="nouveau">Nouveau Client</label>
+                                <input type="radio" id="radiobutton2" name="Nouveau" value="dejaclient">
+                                <label for="dejaclient">Déjà Client</label>
+                                <input type="radio" id="radiobutton3" name="Nouveau" value="support">
+                                <label for="support">Demande de support</label><br>
+                            </div>
+                    
+                            <div class = "formemail">
+                                <label for="email">Entrez votre adresse courriel :</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <h1>Description</h1>
+                            <label for="description">Détaillez votre demande</label>
+                            <textarea name="description" id="description" >Décrivez l'objet de votre demande ici. Des détails additionnels pourront être discutés une fois votre demande traitée.
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class = "submitreset">
+                        <input type="submit" value="Soumettre">
+                        <input type="reset">
+                        <input type="checkbox" id="contacter" name="contacter" value="je consente">
+                        <label for="vehicle1"> J'accepte d'être contacté via l'adresse courriel fournie</label><br>
+                    </div>
+                </form>
+            
+             <div class="piedentete">
+                <h2>Département de techniques d'intégration multimédia - Collège de Maisonneuve - 3800 Sherbrooke Est, Montréal</h2>
+
+            </div>
         </div>
     </section>
     <section id = "section-2">
-        <div class="global">
+        <div class="global  pagetableau">
             <h2>Tableau</h2>
+            <div class="">
+                <table>
+                    <caption>Horaire de disponibilité pour prendre un rendez-vous</caption>
+                    <thead>
+                        <tr>
+                            <th>Heure</th>
+                            <th>Lundi</th>
+                            <th>Mardi</th>
+                            <th>Mercredi</th>
+                            <th>Jeudi</th>
+                            <th>Vendredi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>9:00 AM - 10:00 AM</td>
+                            <td>libre</td>
+                            <td>libre</td>
+                            <td class = "mercredi">--></td>
+                            <td>libre</td>
+                            <td>libre</td>
+                        </tr>
+                        <tr>
+                            <td>10:00 AM - 11:00 AM</td>
+                            <td>libre</td>
+                            <td>libre</td>
+                            <td class = "mercredi">occupé</td>
+                            <td>libre</td>
+                            <td>libre</td>
+                        </tr>
+                        <tr class = "pause">
+                            <td>11:00 AM - 12:00 PM</td>
+                            <td></td>
+                            <td></td>
+                            <td>Pause midi</td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+                            <td>1:00 PM - 2:00 PM</td>
+                            <td>libre</td>
+                            <td>libre</td>
+                            <td class = "mercredi">--></td>
+                            <td>libre</td>
+                            <td>libre</td>
+                        </tr>
+                        <tr>
+                            <td>2:00 PM - 3:00 PM</td>
+                            <td>libre</td>
+                            <td>libre</td>
+                            <td class = "mercredi">occupé</td>
+                            <td>libre</td>
+                            <td>libre</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="6">Fin de la journée</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="piedentete">
+                <h2>Département de techniques d'intégration multimédia - Collège de Maisonneuve - 3800 Sherbrooke Est, Montréal</h2>
+
+            </div>
         </div>
     </section>
     <section id = "section-3">

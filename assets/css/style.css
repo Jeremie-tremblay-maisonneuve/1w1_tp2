@@ -7,17 +7,21 @@ body{
     font-family:monospace;
     color: rgb(0, 0, 0);
     text-align: center;
-    background-color: white;
+    background-color: rgb(230, 245, 255);
 }
 
 .global{
     min-height: 100vh;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 1);
     border-left: solid rgb(202, 202, 202) 1px;
     border-right: solid rgb(202, 202, 202) 1px;
     border-bottom: dashed rgb(192, 192, 192) 1px;
     max-width: 1100px;
     margin: 0 auto;
+    
+}
+h2{
+    font-size: 1.5rem;
 }
 /* flex direction sur tout lentete*/
 .hero{
@@ -40,7 +44,7 @@ body{
 .hidden{
     display: none;
 }
-#menutop  a{
+#menutop  a, input{
     margin: 0;
     outline: solid rgb(143, 143, 143) 1px;
     margin-top: 1px;
@@ -48,6 +52,7 @@ body{
     font-size: 1.5rem;
     padding: 3px;
     background-color: white;
+    box-shadow: #aaa  5px 5px 5px;
 }
 #menutop a:hover{
     background-color: rgb(59, 59, 59);
@@ -176,7 +181,7 @@ a{
     border-left: gray solid 3px;
 }
 /*bas de l'entete avec les infos du collège*/
-#piedentete  h2{
+.piedentete  h2{
     font-size: 1rem;
     margin-bottom: 0;
     margin-bottom: 60px;
@@ -230,28 +235,89 @@ figcaption{
    flex: 3 2;
 }
 
+/*partie formulaire*/
 
-
-
-
-
-
-
-/*définir la couleur des pages*/
-/*.entete,
-.pied{
-    background-color: rgb(0, 89, 255);
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-body  > section:nth-of-type(1) {
-    background-color: hsl(204, 100%, 50%);
+.gauche{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-height: 50vh;
+    max-width: 50vh;
+    border-right: solid rgb(143, 143, 143) 1px ;
 }
-body  > section:nth-of-type(2) {
-    background-color: hsl(204, 93%, 59%);
+.champs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-body  > section:nth-of-type(3) {
-    background-color: hsl(204, 96%, 70%);
-}
-body  > section:nth-of-type(4) {
-    background-color: hsl(204, 84%, 82%);
-}*/
+.radio, .formemail, .desc, .submitreset{
+    padding: 20px;
 
+    margin: 1px;
+}
+#description{
+    min-width: 300px;
+    min-height: 200px;
+}
+.submitreset{
+    border-top: solid rgb(143, 143, 143) 1px;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+}
+input, textarea{
+    box-shadow: #aaa  5px 5px 5px ;
+}
+.radio  input{
+    box-shadow: none;
+    outline: none;
+}
+/*style du tableau*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+.pause  td{
+    border: none;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.mercredi{
+    border-top: none;
+    border-bottom: none;
+    transform: rotate(-90deg);
+    font-size: smaller;
+    color: #f00;
+}
+.pagetableau{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
