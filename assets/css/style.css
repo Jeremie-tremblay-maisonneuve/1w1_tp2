@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    font-family:monospace;
-    color: rgb(0, 0, 0);
+    font-family: JetBrains Mono, monospace;
+    color: rgb(63, 63, 63);
     text-align: center;
     background-color: rgb(230, 245, 255);
 }
@@ -36,7 +36,7 @@ h2{
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 30px;
-    position:sticky;
+    position: sticky;
     top: 20px;
     
    
@@ -44,6 +44,7 @@ h2{
 .hidden{
     display: none;
 }
+
 #menutop  a, input{
     margin: 0;
     outline: solid rgb(143, 143, 143) 1px;
@@ -74,8 +75,8 @@ h2{
     position : fixed;
     top: 100px;
     right: 20px;
-    border : 1px solid #00f;
-    background-color: #07235f;
+    border : 1px solid rgb(87, 87, 87);
+    background-color: #999999;
     color: #fff;
     transition: transform .25s;
     transform: translateX(225px);
@@ -130,7 +131,7 @@ a{
     font-size: 4rem;
     text-align: left;
     font-style: italic;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: JetBrains Mono, monospace;
     margin-left: 5px;
 }
 .intro  p{
@@ -172,13 +173,15 @@ a{
 }
 /*logo*/
 #logo  img{
-    max-width: 400px;
-    max-height: 400px;
-    flex: 2 2 400px;
+
+    flex: 0 2 200px;
 
 }
 #logo{
     border-left: gray solid 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 /*bas de l'entete avec les infos du collège*/
 .piedentete  h2{
@@ -206,7 +209,7 @@ a{
     flex-direction: row-reverse;
   }
 /*définir la taille max de l'image des articles*/
-#article1{
+.imagearticle{
     max-width: 500px;
     max-height: 400px;
 }
@@ -216,6 +219,7 @@ a{
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    border-top: solid rgb(160, 158, 158) 1px;
 }
 /*faire en sorte que la figcaption soit sous l'image*/
 .fig{
@@ -233,6 +237,8 @@ figcaption{
     flex-direction: column;
     justify-content: center;
    flex: 3 2;
+   margin: 10px;
+   font-size: large;
 }
 
 /*partie formulaire*/
