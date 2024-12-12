@@ -24,7 +24,7 @@
                 <a href="#pied">Info</a>
             </nav>
             <div class = "hidden" id = "menualt">
-                <label  id="burger" for="chk-burger"><img src="https://s2.svgbox.net/hero-outline.svg?ic=menu-alt-1&color=000" width="64" height="64"></label>   
+                <label  id="burger" for="chk-burger"><img src="https://s2.svgbox.net/hero-outline.svg?ic=menu-alt-1&color=000" width="64" height="64" alt = "icone_menu"></label>   
                 <input type="checkbox" name="chk-burger" id="chk-burger">
                 <nav  id="menu">
                     <a href = "#entete">Accueil</a>
@@ -57,21 +57,21 @@
     <!--Fin de la section d'accueil-->
     <section id = "section-1">
         <div class="global  formulaire">
-            <h2>Inscription</h2>
+            <h1>Inscription</h1>
 
 
-                <form action="" id="formulaire1" class = "">
+                <form  id="formulaire1" >
                     <div class = "champs">
                         
                         <div class="gauche">
                             <h2>informations</h2>
                             <div class = "radio">
                                 <input type="radio" id="radiobutton1" name="Nouveau" value="Nouveau">
-                                <label for="nouveau">Nouveau Client</label>
+                                <label for="radiobutton1">Nouveau Client</label>
                                 <input type="radio" id="radiobutton2" name="Nouveau" value="dejaclient">
-                                <label for="dejaclient">Déjà Client</label>
+                                <label for="radiobutton2">Déjà Client</label>
                                 <input type="radio" id="radiobutton3" name="Nouveau" value="support">
-                                <label for="support">Demande de support</label><br>
+                                <label for="radiobutton3">Demande de support</label><br>
                             </div>
                     
                             <div class = "formemail">
@@ -89,8 +89,11 @@
                     <div class = "submitreset">
                         <input type="submit" value="Soumettre">
                         <input type="reset">
+                        
+                    </div>
+                    <div>
                         <input type="checkbox" id="contacter" name="contacter" value="je consente">
-                        <label for="vehicle1"> J'accepte d'être contacté via l'adresse courriel fournie</label><br>
+                        <label for="contacter"> J'accepte d'être contacté via l'adresse courriel fournie</label><br>
                     </div>
                 </form>
             
@@ -102,7 +105,7 @@
     </section>
     <section id = "section-2">
         <div class="global  pagetableau">
-            <h2>Tableau</h2>
+            <h1>Tableau</h1>
             <div class="">
                 <table>
                     <caption>Horaire de disponibilité pour prendre un rendez-vous</caption>
@@ -174,55 +177,60 @@
     </section>
     <section id = "section-3">
         <div class="global  sectionarticles">
-            <h2>Articles</h2>
-            <h1>Une gallerie de quelques projets en création web.</h1>
+            <h1>Articles</h1>
+            <h2>Quelques projets en création web.</h2>
             <article class = "article" id="article-1">
+                <h3>Conception d'une maquette web dans le cadre d'un cours de design</h3>
                 <div class="fig">
                     <figure class ="article__figure">
                         <img  class = "imagearticle" id = "article1" src="assets/image/desktop_accueil.jpg" alt="desktop1">
-                        
+                        <figcaption>Concept de site en mode desktop</figcaption>
                     </figure>
-                    <figcaption>Concept de site en mode desktop</figcaption>
+                   
                 </div>
+                
                 <div class = "para__article">
-                    <p>Voici un exemple de conception de maquette web en format Desktop.</p>
-                    <p>Les grandes lignes de cette maquette rappellent le design du présent site web.</p>
+                    <p>Voici un exemple de conception de maquette web en format Desktop.
+                    Les grandes lignes de cette maquette rappellent le design du présent site web.</p>
                 </div>
                
             </article>
             <article  class = "article" id="article-2">
+                <h3>Conception d'une maquette web dans le cadre d'un cours de design(suite)</h3>
                 <div class="fig">
                     <figure class ="article__figure">
                         <img class = "imagearticle" id = "article2" src="assets/image/mobile_accueil.jpg" alt="Mobile1">
-                        
+                        <figcaption>La version Mobile.</figcaption>
                     </figure>
-                    <figcaption>La version Mobile.</figcaption>
+                    
                 </div>
                 <div class = "para__article">
-                    <p>Maintenant, voici la version mobile du même concept.</p>
-                    <p>La version mobile se conforme aux dimensions des téléphones intelligents.</p>
+                    <p>Maintenant, voici la version mobile du même concept.
+                    La version mobile se conforme aux dimensions des téléphones intelligents.</p>
                 </div>
             </article>
             <article  class = "article" id="article-3">
+                <h3>Conception d'une maquette web dans le cadre de l'examen final de conception web 1w1</h3>
                 <div class="fig">
                     <figure class ="article__figure">
                         <img  class = "imagearticle" id = "article3" src="assets/image/conceptdesktop2.JPG" alt="Desktop2">
-                        
+                        <figcaption>Deuxième concept desktop.</figcaption>
                     </figure>
-                    <figcaption>Deuxième concept desktop.</figcaption>
+                    
                 </div>
                 <div class = "para__article">
-                    <p>Ce deuxième concept à été réalisé lors de l'épreuve final du cours 1w1</p>
-                    <p>I s'agit d'un concept  de site d'agence de voyage.</p>
+                    <p>Ce deuxième concept à été réalisé lors de l'épreuve final du cours 1w1
+                    I s'agit d'un concept  de site d'agence de voyage.</p>
                 </div>
             </article>
             <article  class = "article" id="article-4">
+                <h3>Conception d'une maquette web dans le cadre de l'examen final de conception web 1w1(suite)</h3>
                 <div class="fig">
                     <figure class ="article__figure">
                         <img  class = "imagearticle" id = "article4" src="assets/image/conceptmobile2.JPG" alt="Mobile2">
-                        
+                        <figcaption>Version mobile</figcaption>
                     </figure>
-                    <figcaption>Version mobile</figcaption>
+                    
                 </div>
                 <div class = "para__article">
                     <p>Voici la version mobile du site d'agence de voyage.</p>
@@ -238,19 +246,50 @@
         </div>
     </section>
     <section id = "section-4">
-        <div class="global">
-            <h2>Galerie</h2>
+        <div class="global  partiegallerie">
+            <h1>Galerie</h1>
+            <div class="maingallerie">
+                <div class = "imagesgallerie">
+                    <figure>
+                        <img src="https://s2.svgbox.net/social.svg?ic=github&color=000000" width="128" height="128">
+                        <figcaption>github</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://s2.svgbox.net/social.svg?ic=youtube&color=000000" width="128" height="128">
+                        <figcaption>youtube</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://s2.svgbox.net/social.svg?ic=google&color=000000" width="128" height="128">
+                        <figcaption>google</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://s2.svgbox.net/social.svg?ic=firefox&color=000000" width="128" height="128">
+                        <figcaption>firefox</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=000000" width="128" height="128">
+                        <figcaption>stackoverflow</figcaption>
+                    </figure>
+            </div>
+            <div class = "textegallerie">
+                <h2>Quelques ressources utilisés lors du projet</h2>
+            </div>
+            </div>
+            <div class="piedentete">
+                <h2>Département de techniques d'intégration multimédia - Collège de Maisonneuve - 3800 Sherbrooke Est, Montréal</h2>
+
+            </div>
         </div>
     </section>
     <section id = "section-5">
         <div class="global">
-            <h2>Vidéo</h2>
+            <h1>Vidéo</h1>
         </div>
     </section>
 
     <footer id ="pied" class = "pied">
         <div class = "global">
-            <h2>Pied de Page</h2>
+            <h1>Pied de Page</h1>
         </div>
     </footer>
 </body>

@@ -7,7 +7,7 @@ body{
     font-family: JetBrains Mono, monospace;
     color: rgb(63, 63, 63);
     text-align: center;
-    background-color: rgb(230, 245, 255);
+    background-color: rgb(223, 242, 255);
 }
 
 .global{
@@ -18,10 +18,18 @@ body{
     border-bottom: dashed rgb(192, 192, 192) 1px;
     max-width: 1100px;
     margin: 0 auto;
+
     
+    
+}
+h1{
+    margin-top: 0;
 }
 h2{
     font-size: 1.5rem;
+}
+h3{
+    margin: 10px;
 }
 /* flex direction sur tout lentete*/
 .hero{
@@ -196,22 +204,27 @@ a{
     top: 50%;
     height: 50%;
     transform:  scale(.5);
-    transition: transform .25s, opacity .25s;
+    transition: transform .25s, opacity .50s;
+   
   
-    filter: grayscale(1) opacity(.5) blur(10px);
+    filter: grayscale(1) opacity(.5) blur(5px);
 }
 .article__figure:hover{
     transform : scale(.75);
-    
+   
     filter: grayscale(0) opacity(1) blur(0px);
 }
 .article:nth-of-type(even) {
     flex-direction: row-reverse;
   }
+
+
+
 /*définir la taille max de l'image des articles*/
 .imagearticle{
     max-width: 500px;
     max-height: 400px;
+    
 }
 /*faire en sorte que les images et le texte des articles soient affichés en rangée*/
 .article{
@@ -239,8 +252,12 @@ figcaption{
    flex: 3 2;
    margin: 10px;
    font-size: large;
+   text-align: left;
+  
 }
-
+.para__article  p{
+    border-left: solid 1px black ;
+}
 /*partie formulaire*/
 
 .formulaire{
@@ -271,8 +288,16 @@ figcaption{
     min-width: 300px;
     min-height: 200px;
 }
-.submitreset{
+.submitreset  {
+    
     border-top: solid rgb(143, 143, 143) 1px;
+   flex: 0 2 300px;
+    
+}
+input:hover{
+    
+  background-color: #585858;
+    
 }
 .desc{
     display: flex;
@@ -280,6 +305,7 @@ figcaption{
 }
 input, textarea{
     box-shadow: #aaa  5px 5px 5px ;
+    
 }
 .radio  input{
     box-shadow: none;
@@ -289,6 +315,7 @@ input, textarea{
 table {
     border-collapse: collapse;
     width: 100%;
+    
 }
 
 th, td {
@@ -304,11 +331,12 @@ th {
     border: none;
 }
 tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #d6d5d5;
 }
 
 tr:hover {
-    background-color: #f1f1f1;
+    background-color: #585858;
+    color: white;
 }
 
 caption {
@@ -326,4 +354,35 @@ caption {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+/*partie gallerie*/
+.maingallerie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.imagesgallerie{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+max-width: 300px;
+}
+.imagesgallerie  figure{
+    outline: solid rgb(143, 143, 143) 1px ;
+    box-shadow: #aaa  5px 5px 5px ;
+    margin: 5px;
+    }
+.textegallerie{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    flex-wrap: wrap;
+    
+}
+.textegallerie  h2{
+  font-size: 50px;
+    text-align: left;
+    box-shadow: #aaa  5px 5px 5px ;
+    
+    border-left: black 1px solid;
 }
