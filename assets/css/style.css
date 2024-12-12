@@ -27,6 +27,7 @@ h1{
 }
 h2{
     font-size: 1.5rem;
+    margin: 10px;
 }
 h3{
     margin: 10px;
@@ -377,6 +378,7 @@ max-width: 300px;
     flex-direction: column;
     max-width: 500px;
     flex-wrap: wrap;
+    justify-content: center;
     
 }
 .textegallerie  h2{
@@ -385,4 +387,53 @@ max-width: 300px;
     box-shadow: #aaa  5px 5px 5px ;
     
     border-left: black 1px solid;
+}
+/*partie pied de page*/
+.sectionpied{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: auto; 
+    height: auto; 
+}
+.footgauche{
+    display: flex;
+    flex-direction: column;
+    
+    max-width: 500px;
+    margin: 10px;
+    justify-content: start;
+    text-justify: auto;
+    
+}
+.footdroit{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 10px;
+    
+}
+.footgauche  p{
+    margin: 10px;
+}
+.footdroit,.footgauche{
+    opacity: 50%;
+}
+/*section video*/
+
+.videos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+iframe{
+    outline: solid rgb(202, 202, 202) 1px;
+    padding: 10px;
+    box-shadow: #aaa  5px 5px 5px ;
+}
+
+.active{
+    
+    color: rgb(211, 34, 34);
 }
